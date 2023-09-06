@@ -27,4 +27,4 @@ Please ensure you have kubectl, terraform and minikube installed.
 ```
 > If there is an error with port-forwarding and services not being found, please wait for the all the services to be up and running and then apply again.
 - Manually create datasource and dashboard in Grafana in datasource url. You can use one of the json files from /monitoring-osk-using-strimzi/strimzi-0.35.1/examples/metrics/grafana-dashboards 
-> Provide: http://host.docker.internal:9090
+> Provide datasource URL as: http://host.docker.internal:9090
