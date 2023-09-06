@@ -62,7 +62,7 @@ resource "kubernetes_cluster_role_binding" "strimzi_cluster_operator_topic_opera
 
 resource "null_resource" "execute_bash_script" {
   triggers = {
-    bash_script = filebase64("${var.repository_path}/monitoring-osk-using-strimzi/apply-files.sh")
+    bash_script = filebase64("/Users/sraj/Desktop/monitoring-osk-using-strimzi/apply-files.sh")
   }
 
   provisioner "local-exec" {
@@ -79,7 +79,6 @@ resource "null_resource" "kafka-metrics" {
     command = "kubectl apply -f ${var.repository_path}/monitoring-osk-using-strimzi/strimzi-0.35.1/examples/metrics/kafka-metrics.yaml -n kafka"
   }
 }
-
 
 resource "null_resource" "prometheus_operator" {
  provisioner "local-exec" {

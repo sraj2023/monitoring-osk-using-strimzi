@@ -16,7 +16,8 @@ Please ensure you have kubectl, terraform and minikube installed.
  kubectl create ns kafka
  kubectl create ns monitoring
 ```
-- Update your path in line 5 of main.tf.
+- Update your path in line 5 of main.tf, in the path of the Directory in apply-files.sh and in provider.tf.
+
 - Initialize terraform:
 ```
  terraform init

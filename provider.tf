@@ -16,11 +16,11 @@ terraform {
 }
 
 provider "kubectl" {
-  config_path = "/.kube/config"
+  config_path = "/Users/sraj/.kube/config"
 }
 
 provider "kubernetes" {
-  config_path = "/.kube/config"
+  config_path = "/Users/sraj/.kube/config"
 }
 
 provider "null" {
